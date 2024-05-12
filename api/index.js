@@ -23,11 +23,7 @@ app.use("/uploads",express.static(__dirname+"/uploads"))
 app.use(express.static(__dirname+"/client/build"))
 
 mongoose.connect(
-  "mongodb+srv://cayiroglusinan:OcOceBMkIuC6B8gl@cluster0.m3jl6ng.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0",
-  {useNewUrlParser: true,
-    useUnifiedTopology: true,
-    ssl: true, // Enable SSL
-},
+  "mongodb+srv://cayiroglusinan:OcOceBMkIuC6B8gl@cluster0.m3jl6ng.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0"
 );
 app.post("/register", async (req, res) => {
   const { username, password } = req.body;
