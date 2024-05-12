@@ -23,7 +23,7 @@ function CreatePost() {
         if (files.length > 0) {
             data.set("file", files[0]);
         }        ev.preventDefault()
-        const response = await fetch("http://localhost:4000/post",{
+        const response = await fetch("https://mern-blog-app-gsj4.vercel.app/post",{
             method:"POST",
             body:data,
             credentials:"include"
