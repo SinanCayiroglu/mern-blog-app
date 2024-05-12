@@ -22,7 +22,7 @@ export default function PostPage() {
   if (!postInfo) return '';
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/post/${id}`, {
+      const response = await fetch(`https://mern-blog-app-1-qb9j.onrender.com/post/${id}`, {
         method: 'DELETE',
         credentials: "include",
       });
