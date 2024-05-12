@@ -11,7 +11,7 @@ export default function PostPage() {
   const [redirect,setRedirect] = useState(false)
   const {id} = useParams();
   useEffect(() => {
-    fetch(`http://localhost:4000/post/${id}`)
+    fetch(`https://mern-blog-app-gsj4.vercel.app/post/${id}`)
       .then(response => {
         response.json().then(postInfo => {
           setPostInfo(postInfo);
