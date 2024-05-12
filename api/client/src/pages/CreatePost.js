@@ -23,7 +23,7 @@ function CreatePost() {
         if (files.length > 0) {
             data.set("file", files[0]);
         }        ev.preventDefault()
-        const response = await fetch("https://mern-blog-app-gsj4.vercel.app/post",{
+        const response = await fetch("https://mern-blog-app-1-t5jg.onrender.com/post",{
             method:"POST",
             body:data,
             credentials:"include"
