@@ -5,7 +5,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState("");
   async function register(ev){
     ev.preventDefault()
-     const response=await fetch("https://mern-blog-app-1-qb9j.onrender.com/register",{
+     const response=await fetch("https://mern-blog-app-1-t5jg.onrender.com/register",{
       method:"POST",
       body:JSON.stringify({username,password}),
       headers:{"Content-Type":"application/json"},
