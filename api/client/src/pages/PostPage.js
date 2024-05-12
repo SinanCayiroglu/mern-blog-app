@@ -11,7 +11,7 @@ export default function PostPage() {
   const [redirect,setRedirect] = useState(false)
   const {id} = useParams();
   useEffect(() => {
-    fetch(`https://mern-blog-app-1-qb9j.onrender.com/post/${id}`)
+    fetch(`https://mern-blog-app-1-t5jg.onrender.com/post/${id}`)
       .then(response => {
         response.json().then(postInfo => {
           setPostInfo(postInfo);
@@ -22,7 +22,7 @@ export default function PostPage() {
   if (!postInfo) return '';
   const handleDelete = async () => {
     try {
-      const response = await fetch(`https://mern-blog-app-1-qb9j.onrender.com/post/${id}`, {
+      const response = await fetch(`https://mern-blog-app-1-t5jg.onrender.com/post/${id}`, {
         method: 'DELETE',
         credentials: "include",
       });
